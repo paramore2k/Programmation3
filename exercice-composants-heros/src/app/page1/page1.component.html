@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+          <app-recherche></app-recherche></div>
+      <div class="col">
+
+        <mat-grid-list cols="4" rowHeight="2:1">
+          <mat-grid-tile [colspan]="4">
+            <app-carousel></app-carousel>
+          </mat-grid-tile>
+          <mat-grid-tile
+            *ngFor="let tile of tabObjets">
+            <mat-card>
+            <mat-card-content class="hero">
+            {{tile.name}}
+              <span [ngStyle]="{'font-size': '10px'}" *ngIf="tile.name === 'Modern Warfare'">(Mon héro préféré !!!!)</span>
+          </mat-card-content>
+
+          </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+<app-footer></app-footer>
