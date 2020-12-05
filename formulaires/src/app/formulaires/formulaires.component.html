@@ -1,0 +1,16 @@
+Description du formulaire : {{description}} {{nom}}
+<br/>
+<mat-form-field>
+  <mat-label>Description: </mat-label>
+    <input matInput [(ngModel)]="description"
+           (ngModelChange)="change({nouvelleValeur : $event})" placeholder="Description:"><br/>
+</mat-form-field>
+<br/>
+<mat-form-field>
+  <mat-label>
+    Nom:</mat-label>
+
+    <input matInput [(ngModel)]="nom"
+           (ngModelChange)="change({nouvelleValeur : $event})" placeholder="Nom:"><br/>
+
+</mat-form-field>
