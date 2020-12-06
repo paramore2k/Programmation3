@@ -1,0 +1,7 @@
+.produits{
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 2px;
+}
+

@@ -1,0 +1,5 @@
+.description{
+  display: flex;
+  align-content: space-evenly;
+  justify-content: space-around;
+}

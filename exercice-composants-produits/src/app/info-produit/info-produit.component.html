@@ -1,0 +1,10 @@
+<p class="description">À propos: {{description}}</p>
+<p>{{ nom }}</p>
+
+<div *ngIf="qteStock === 0; else ElseSecond">Rupture de stock</div>
+<ng-template #ElseSecond>
+  <ng-container *ngIf="qteStock >= 1 && qteStock <=5; else third">Quantitié limite disponible</ng-container>
+</ng-template>
+<ng-template #third class="description">Disponibles: {{ qteStock }}</ng-template>
+
+

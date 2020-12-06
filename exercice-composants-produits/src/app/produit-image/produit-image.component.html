@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row produits">
+      <img src="https://via.placeholder.com/250" alt="" class="img-fluid">
+  <mat-list>
+    <mat-list-item>
+
+    </mat-list-item>
+
+    <mat-list-item>
+      <app-info-produit [description]="produit.description" [qteStock]="produit.qteStock" [nom]="produit.nom">
+      </app-info-produit>
+    </mat-list-item>
+    <mat-list-item>
+      <p class="mt-4">{{ prix }} $</p>
+    </mat-list-item>
+    <mat-list-item>
+      <app-liens-details-produit></app-liens-details-produit>
+    </mat-list-item>
+    <label>Nom:
+      <input [(ngModel)]="produit.nom" placeholder="Nom"/>
+    </label>
+  </mat-list>
+
+  </div>
+</div>
+
+
+
+
+
+
